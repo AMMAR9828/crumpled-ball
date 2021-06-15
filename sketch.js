@@ -20,7 +20,7 @@ function setup() {
 
 	//Create the Bodies Here.
 	ground= new Ground (600,380,1200,20)
-	papper = new Papper(200,300,40)
+	papper = new Papper(200,300,25)
 	leftside = new Dustbin(900,310,15,120)
 	bottom = new Dustbin(978,363,140,15)
 	rightside = new Dustbin(1056,310,15,120)
@@ -50,7 +50,7 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(papperObject.body, papperObject.body.position,{x:85,y:85})
+		Matter.Body.applyForce(papper.body, papper.body.position,{x:50,y:-50})
 	}
 }
 
